@@ -1,44 +1,35 @@
 :root {
-    --primary: #0d7c66; /* verde elegante */
-    --dark: #0a0a0a;
-    --light: #f5f5f5;
-    --gray: #666;
+    --primary: #0F172A;      /* azul oscuro moderno */
+    --secondary: #1E293B;    /* azul grisáceo */
+    --light: #F8FAFC;        /* gris muy claro */
+    --gray: #64748B;         /* gris medio */
+    --whatsapp: #25D366;     /* verde WhatsApp */
 }
+
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     color: var(--dark);
     background: white;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background: white;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    border-bottom: 1px solid #eee;
+    background: var(--primary);
+    border-bottom: none;
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: var(--primary);
+    color: white;
 }
 
 nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: 500;
+    color: white;
 }
 
 nav a:hover {
-    color: var(--primary);
+    color: var(--whatsapp);
 }
 
 /* Hero */
@@ -61,18 +52,12 @@ nav a:hover {
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 25px;
-    background: var(--primary);
+    background: var(--whatsapp);
     color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
 }
 
 .btn:hover {
-    background: #0b6a58;
+    background: #1ebe5d;
 }
 
 /* Secciones */
@@ -93,15 +78,19 @@ nav a:hover {
 }
 
 .card {
-    width: 300px;
-    padding: 30px;
     background: white;
-    border-radius: 12px;
-    box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0px 5px 25px rgba(15, 23, 42, 0.15);
+    border: 1px solid #e2e8f0;
 }
 
 .card h3 {
     color: var(--primary);
+}
+
+.card p {
+    color: var(--gray);
 }
 
 /* WhatsApp flotante */
@@ -113,7 +102,9 @@ nav a:hover {
     padding: 12px;
     border-radius: 50%;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background: var(--whatsapp);
 }
+
 
 .whatsapp img {
     width: 32px;
