@@ -1,0 +1,106 @@
+:root {
+    --primary: #0F172A;      /* azul oscuro moderno */
+    --secondary: #1E293B;    /* azul grisáceo */
+    --light: #F8FAFC;        /* gris muy claro */
+    --gray: #64748B;         /* gris medio */
+    --whatsapp: #25D366;     /* verde WhatsApp */
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    color: var(--dark);
+    background: white;
+}
+
+/* Header */
+header {
+    background: var(--primary);
+    border-bottom: none;
+}
+
+.logo {
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: var(--whatsapp);
+}
+
+/* Hero */
+.hero {
+    padding: 150px 50px;
+    text-align: center;
+    background: linear-gradient(to bottom, #e9fff7, white);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: var(--primary);
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 500px;
+    margin: auto;
+    color: var(--gray);
+}
+
+.btn {
+    background: var(--whatsapp);
+    color: white;
+}
+
+.btn:hover {
+    background: #1ebe5d;
+}
+
+/* Secciones */
+.section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.alt {
+    background: var(--light);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 300px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: var(--primary);
+}
+
+/* WhatsApp flotante */
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.whatsapp img {
+    width: 32px;
+    filter: invert(1);
+}
