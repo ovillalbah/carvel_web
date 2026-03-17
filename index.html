@@ -1,78 +1,475 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARVEL – Gestión de Cartera Morosa</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Tipografía Comfortaa -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARVEL S.A.S. — Soluciones Jurídicas y Administrativas | Bogotá, Colombia</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <meta name="description" content="CARVEL S.A.S. — 11 años de experiencia en cobro de cartera, procesos jurídicos y gestión extrajudicial en Bogotá y Cundinamarca.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Encabezado -->
-    <header>
-        <div class="logo">CARVEL</div>
-        <nav>
-            <a href="#servicios">Servicios</a>
-            <a href="#por-que">Por qué elegirnos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
 
-    <!-- Sección Hero -->
-    <section class="hero">
-        <h1>Gestión Profesional de Cartera para Conjuntos Residenciales</h1>
-        <p>Maximizamos la recuperación de cartera morosa con procesos eficientes, transparentes y humanos.</p>
-        <a class="btn" href="https://wa.me/573006774757?text=Hola,%20quiero%20información%20sobre%20la%20gestión%20de%20cartera%20de%20CARVEL." target="_blank">Hablar por WhatsApp</a>
-    </section>
+<!-- ══ NAVBAR ══ -->
+<nav>
+  <a href="#inicio" class="nav-logo">
+    <img src="img/logo1.png" alt="CARVEL S.A.S.">
+    <div class="nav-logo-text">
+      <span class="brand-name">CARVEL</span>
+      <span class="brand-sub">S.A.S. — Soluciones Jurídicas y Administrativas</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#sectores">Sectores</a></li>
+    <li><a href="#contacto" class="nav-cta">Contáctenos</a></li>
+  </ul>
+</nav>
 
-    <!-- Servicios -->
-    <section id="servicios" class="section">
-        <h2>Nuestros Servicios</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Gestión Prejurídica</h3>
-                <p>Realizamos contacto directo, acuerdos de pago, seguimiento y conciliaciones con metodología profesional.</p>
-            </div>
-            <div class="card">
-                <h3>Gestión Jurídica</h3>
-                <p>Procesos jurídicos llevados por abogados expertos en propiedad horizontal y cobro de cartera.</p>
-            </div>
-            <div class="card">
-                <h3>Sistematización de Información</h3>
-                <p>Control y seguimiento de toda la cartera del conjunto mediante informes claros y periódicos.</p>
-            </div>
+<!-- ══ HERO ══ -->
+<section id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">Bogotá &amp; Cundinamarca, Colombia</div>
+    <h1 class="hero-title">Recuperamos<br>su <em>cartera</em><br>con autoridad</h1>
+    <p class="hero-subtitle">legal y resultados reales.</p>
+    <p class="hero-desc">Somos especialistas en gestión integral de cobro de cartera, procesos jurídicos y recuperación de activos. Once años de experiencia respaldan nuestra metodología rigurosa, ética y efectiva.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/573107619044?text=Hola%2C%20me%20interesa%20información%20sobre%20sus%20servicios%20de%20cobranza." class="btn-primary" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.117 1.531 5.845L.057 23.9a.5.5 0 0 0 .623.623l6.037-1.462A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.025-1.378l-.36-.214-3.733.903.924-3.642-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+        Asesoría Legal
+      </a>
+      <a href="#servicios" class="btn-secondary">Ver Servicios →</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num" data-target="11" data-suffix="">11</span>
+      <span class="stat-label">Años de<br>Experiencia</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="5" data-suffix="+">5+</span>
+      <span class="stat-label">Sectores<br>Atendidos</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">100%</span>
+      <span class="stat-label">Respaldo<br>Legal</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NOSOTROS ══ -->
+<section id="nosotros">
+  <div class="nosotros-grid">
+
+    <div class="nosotros-img-side reveal">
+      <div class="nosotros-foto">
+        <div class="nosotros-corner tl"></div>
+        <div class="nosotros-corner tr"></div>
+        <div class="nosotros-corner bl"></div>
+        <div class="nosotros-corner br"></div>
+        <img src="img/justicia.jpg" alt="Justicia CARVEL">
+      </div>
+      <div class="years-badge">
+        <span class="years-num">11</span>
+        <span class="years-text">Años</span>
+      </div>
+    </div>
+
+    <div class="nosotros-text reveal">
+      <div class="section-header">
+        <div class="section-tag">Quiénes Somos</div>
+        <h2 class="section-title">Experiencia jurídica<br>al servicio de <em>sus activos</em></h2>
+        <div class="divider"></div>
+      </div>
+      <p><strong>CARVEL S.A.S.</strong> es una empresa colombiana especializada en la gestión integral de cobro de cartera y procesos jurídicos. Con más de once años de trayectoria ininterrumpida en Bogotá y Cundinamarca, hemos acompañado a empresas, entidades financieras y personas naturales en la recuperación efectiva de sus obligaciones.</p>
+      <p>Nuestra fortaleza radica en combinar la rigurosidad del derecho colombiano con estrategias de negociación que priorizan la eficiencia, la transparencia y el respeto por todas las partes involucradas. Cada caso es tratado con la discreción y el compromiso que merece.</p>
+      <div class="nosotros-values">
+        <div class="value-item">
+          <h4>Transparencia</h4>
+          <p>Comunicación clara en cada etapa del proceso.</p>
         </div>
-    </section>
+        <div class="value-item">
+          <h4>Legalidad</h4>
+          <p>Actuamos dentro del marco jurídico colombiano.</p>
+        </div>
+        <div class="value-item">
+          <h4>Efectividad</h4>
+          <p>Resultados medibles y comprobados.</p>
+        </div>
+        <div class="value-item">
+          <h4>Confidencialidad</h4>
+          <p>Sus datos y los de sus clientes, protegidos.</p>
+        </div>
+      </div>
+    </div>
 
-    <!-- Por qué elegirnos -->
-    <section id="por-que" class="section alt">
-        <h2>¿Por qué elegir a CARVEL?</h2>
-        <ul>
-            <li>✔ Recuperación rápida y altamente efectiva.</li>
-            <li>✔ Atención personalizada a cada copropietario.</li>
-            <li>✔ Proceso transparente para la administración.</li>
-            <li>✔ Reportes claros y fáciles de entender.</li>
-            <li>✔ Equipo profesional y especializado.</li>
-        </ul>
-    </section>
+  </div>
+<!-- ══ SERVICIOS ══ -->
+<section id="servicios">
+  <div class="section-header reveal">
+    <div class="section-tag">Lo Que Hacemos</div>
+    <h2 class="section-title">Nuestros <em>Servicios</em></h2>
+    <div class="divider"></div>
+  </div>
 
-    <!-- Contacto -->
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <p>Estamos listos para ayudar a recuperar la cartera de tu conjunto.</p>
-        <a class="btn" href="https://wa.me/573002704168?text=Hola,%20quiero%20más%20información%20sobre%20CARVEL." target="_blank">Contactar por WhatsApp</a>
-    </section>
+  <div class="servicios-grid">
 
-    <!-- Botón flotante WhatsApp -->
-    <a class="whatsapp" href="https://wa.me/573002704168?text=Hola,%20necesito%20información%20sobre%20gestión%20de%20cartera." target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
-    </a>
+    <div class="servicio-card reveal">
+      <span class="servicio-num">01</span>
+      <div class="servicio-icon">
+        <!-- Balanza de justicia -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 22V8M5 12H2a10 10 0 0 0 20 0h-3M7 8l5-6 5 6"/>
+        </svg>
+      </div>
+      <h3>Cobro Jurídico y Demandas Ejecutivas</h3>
+      <p>Iniciamos procesos ejecutivos ante los despachos judiciales competentes para el cobro de obligaciones claras, expresas y exigibles. Gestionamos el proceso hasta el efectivo pago.</p>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="servicio-card reveal">
+      <span class="servicio-num">02</span>
+      <div class="servicio-icon">
+        <!-- Documento -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14,2 14,8 20,8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+      </div>
+      <h3>Cobro Extrajudicial</h3>
+      <p>Gestión de cobro persuasiva y profesional antes de escalar a instancias judiciales. Contacto directo, negociación de acuerdos de pago y seguimiento del deudor.</p>
+    </div>
+
+    <div class="servicio-card reveal">
+      <span class="servicio-num">03</span>
+      <div class="servicio-icon">
+        <!-- Maletín / cartera -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="7" width="20" height="14" rx="2"/>
+          <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+          <line x1="12" y1="12" x2="12" y2="16"/>
+          <line x1="10" y1="14" x2="14" y2="14"/>
+        </svg>
+      </div>
+      <h3>Gestión de Cartera Empresarial</h3>
+      <p>Administración integral de su cartera: clasificación, análisis de riesgo, normalización de cuentas, reportes periódicos y estrategias de recuperación por segmento.</p>
+    </div>
+
+    <div class="servicio-card reveal">
+      <span class="servicio-num">04</span>
+      <div class="servicio-icon">
+        <!-- Columnas / tribunal -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="3" y1="22" x2="21" y2="22"/>
+          <rect x="5" y="7" width="4" height="9"/>
+          <rect x="10" y="7" width="4" height="9"/>
+          <rect x="15" y="7" width="4" height="9"/>
+          <path d="M12 2L3 7h18z"/>
+        </svg>
+      </div>
+      <h3>Procesos Jurídicos Especializados</h3>
+      <p>Asesoría y representación en procesos de insolvencia, acuerdos de reestructuración, impugnación de acreencias y medidas cautelares sobre bienes del deudor.</p>
+    </div>
+
+    <div class="servicio-card reveal">
+      <span class="servicio-num">05</span>
+      <div class="servicio-icon">
+        <!-- Apretón de manos -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </div>
+      <h3>Acuerdos de Pago y Mediación</h3>
+      <p>Facilitamos acuerdos entre acreedor y deudor, buscando soluciones sostenibles que permitan la recuperación sin agotar recursos judiciales innecesariamente.</p>
+    </div>
+
+    <div class="servicio-card reveal">
+      <span class="servicio-num">06</span>
+      <div class="servicio-icon">
+        <!-- Lupa -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </div>
+      <h3>Investigación y Localización de Activos</h3>
+      <p>Investigación patrimonial del deudor para identificar bienes embargables, cuentas bancarias, vehículos, inmuebles y otras fuentes de pago en el territorio nacional.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ POR QUÉ CARVEL ══ -->
+<section id="por-que">
+  <div class="porque-grid">
+
+    <div class="porque-left reveal">
+      <div class="section-header">
+        <div class="section-tag">Nuestra Diferencia</div>
+        <h2 class="section-title">¿Por qué elegir<br><em>CARVEL S.A.S.</em>?</h2>
+        <div class="divider"></div>
+      </div>
+      <p>En un mercado saturado de promesas, CARVEL se distingue por resultados concretos, respaldo jurídico sólido y un equipo comprometido con los intereses de cada cliente.</p>
+      <p>Trabajamos con tarifas por éxito, lo que significa que nuestros incentivos están perfectamente alineados con los suyos: cobramos cuando usted recupera.</p>
+      <a href="https://wa.me/573107619044?text=Hola%2C%20quiero%20saber%20más%20sobre%20CARVEL%20S.A.S." class="btn-primary" target="_blank" style="margin-top:12px;">
+        Hablar con un Especialista →
+      </a>
+    </div>
+
+    <div class="diferenciadores reveal">
+      <div class="dif-item">
+        <div class="dif-icon">✓</div>
+        <div class="dif-text">
+          <h4>11 años de experiencia comprobada</h4>
+          <p>Trayectoria ininterrumpida en cobro de cartera y litigios en Bogotá y Cundinamarca.</p>
+        </div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">✓</div>
+        <div class="dif-text">
+          <h4>Cobertura en múltiples sectores</h4>
+          <p>Bancario, empresarial, propiedad horizontal, personas naturales y más.</p>
+        </div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">✓</div>
+        <div class="dif-text">
+          <h4>Equipo jurídico especializado</h4>
+          <p>Abogados con experiencia en derecho civil, comercial y procesal colombiano.</p>
+        </div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">✓</div>
+        <div class="dif-text">
+          <h4>Cumplimiento de Habeas Data</h4>
+          <p>Gestión de cartera dentro del marco de la Ley 1266 y protección de datos personales.</p>
+        </div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">✓</div>
+        <div class="dif-text">
+          <h4>Seguimiento transparente</h4>
+          <p>Reportes periódicos y acceso a información actualizada sobre el estado de su cartera.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ PROCESO ══ -->
+<section id="proceso">
+  <div class="section-header centered reveal">
+    <div class="section-tag centered">Metodología</div>
+    <h2 class="section-title">Nuestro <em>Proceso</em></h2>
+    <div class="divider centered"></div>
+  </div>
+
+  <div class="proceso-steps">
+    <div class="paso reveal">
+      <div class="paso-num">01</div>
+      <h3>Diagnóstico</h3>
+      <p>Análisis detallado de la cartera, documentación y antigüedad de las obligaciones.</p>
+    </div>
+    <div class="paso reveal">
+      <div class="paso-num">02</div>
+      <h3>Estrategia</h3>
+      <p>Definimos la ruta óptima: extrajudicial o jurídica, según cada caso y cliente.</p>
+    </div>
+    <div class="paso reveal">
+      <div class="paso-num">03</div>
+      <h3>Gestión Activa</h3>
+      <p>Contacto con deudores, negociación, cobro persuasivo o representación judicial.</p>
+    </div>
+    <div class="paso reveal">
+      <div class="paso-num">04</div>
+      <h3>Recuperación</h3>
+      <p>Recaudo efectivo, liquidación de obligaciones y cierre documentado del proceso.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTORES ══ -->
+<section id="sectores">
+  <div class="section-header centered reveal">
+    <div class="section-tag centered">A Quién Servimos</div>
+    <h2 class="section-title">Sectores que <em>Atendemos</em></h2>
+    <div class="divider centered"></div>
+  </div>
+
+  <div class="sectores-grid reveal">
+    <!-- Bancos y Financieras -->
+    <div class="sector-item">
+      <div class="sector-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="22" x2="21" y2="22"/><rect x="5" y="7" width="4" height="9"/><rect x="10" y="7" width="4" height="9"/><rect x="15" y="7" width="4" height="9"/><path d="M12 2L3 7h18z"/></svg>
+      </div>
+      <h4>Bancos y Financieras</h4>
+    </div>
+
+    <!-- Empresas y Pymes -->
+    <div class="sector-item">
+      <div class="sector-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+      </div>
+      <h4>Empresas y Pymes</h4>
+    </div>
+
+    <!-- Personas Naturales -->
+    <div class="sector-item">
+      <div class="sector-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </div>
+      <h4>Personas Naturales</h4>
+    </div>
+
+    <!-- Propiedad Horizontal -->
+    <div class="sector-item">
+      <div class="sector-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+      </div>
+      <h4>Propiedad Horizontal</h4>
+    </div>
+
+    <!-- Todos los Sectores -->
+    <div class="sector-item">
+      <div class="sector-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <h4>Todos los Sectores</h4>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACTO ══ -->
+<section id="contacto">
+  <div class="section-header centered reveal">
+    <div class="section-tag centered">Hablemos</div>
+    <h2 class="section-title">Inicie su <em>Asesoría</em><br>Legal Hoy</h2>
+    <div class="divider centered"></div>
+  </div>
+
+  <div class="contacto-details">
+
+    <div class="contacto-detail">
+      <div class="detail-icon">
+        <!-- Teléfono -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/>
+        </svg>
+      </div>
+      <div class="detail-content">
+        <span class="detail-label">WhatsApp &amp; Teléfono</span>
+        <span class="detail-value">+57 310 761 9044</span>
+      </div>
+    </div>
+
+    <div class="contacto-detail">
+      <div class="detail-icon">
+        <!-- Globe -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </div>
+      <div class="detail-content">
+        <span class="detail-label">Sitio Web</span>
+        <span class="detail-value">carvelsas.com</span>
+      </div>
+    </div>
+
+    <div class="contacto-detail">
+      <div class="detail-icon">
+        <!-- Pin ubicación -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+      </div>
+      <div class="detail-content">
+        <span class="detail-label">Cobertura</span>
+        <span class="detail-value">Bogotá D.C. &amp; Cundinamarca</span>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="reveal">
+      <div class="cta-box">
+        <h3>¿Necesita recuperar<br>su cartera vencida?</h3>
+        <p>Escríbanos por WhatsApp y en minutos un especialista evaluará su situación sin costo ni compromiso.</p>
+        <a href="https://wa.me/573107619044?text=Hola%2C%20me%20gustaría%20una%20asesoría%20legal%20sobre%20cobro%20de%20cartera." class="btn-whatsapp" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.117 1.531 5.845L.057 23.9a.5.5 0 0 0 .623.623l6.037-1.462A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.025-1.378l-.36-.214-3.733.903.924-3.642-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+          Asesoría Legal por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo-text">
+        <span class="brand-name">CARVEL</span>
+        <span class="brand-sub">S.A.S. — Soluciones Jurídicas y administrativas</span>
+      </div>
+      <p class="footer-tagline">"Recuperamos lo que es suyo, con la ley de su lado."</p>
+    </div>
+    <div class="footer-links">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#servicios">Cobro Jurídico</a></li>
+        <li><a href="#servicios">Cobro Extrajudicial</a></li>
+        <li><a href="#servicios">Gestión de Cartera</a></li>
+        <li><a href="#servicios">Procesos Jurídicos</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#proceso">Metodología</a></li>
+        <li><a href="#sectores">Sectores</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="https://wa.me/573107619044" target="_blank">+57 310 761 9044</a></li>
+        <li><a href="#contacto">Bogotá &amp; Cundinamarca</a></li>
+        <li><a href="https://carvelsas.com">carvelsas.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span>CARVEL S.A.S.</span> — Todos los derechos reservados.</p>
+    <span class="footer-legal">Ley 1266 de 2008 — Habeas Data | Gestión Ética de Cartera</span>
+  </div>
+</footer>
+
+<!-- ══ WHATSAPP FLOTANTE ══ -->
+<div class="wa-float">
+  <div class="wa-tooltip">💬 ¿Necesita asesoría?</div>
+  <a href="https://wa.me/573107619044?text=Hola%20CARVEL%2C%20me%20gustaría%20información%20sobre%20sus%20servicios." class="wa-btn" target="_blank" aria-label="WhatsApp CARVEL S.A.S.">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.117 1.531 5.845L.057 23.9a.5.5 0 0 0 .623.623l6.037-1.462A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.025-1.378l-.36-.214-3.733.903.924-3.642-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+  </a>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
