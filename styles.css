@@ -50,8 +50,8 @@ nav {
 }
 
 .nav-logo img {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   filter: brightness(1.1);
 }
@@ -350,13 +350,13 @@ section { padding: 100px 5%; }
   transform: translateY(-30%);
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
   animation: fadeInRight 1s 0.5s ease both;
 }
 
 .stat-item {
   text-align: center;
-  padding: 24px 32px;
+  padding: 16px 24px;
   border: 1px solid rgba(201,168,76,0.15);
   background: rgba(201,168,76,0.03);
   backdrop-filter: blur(10px);
@@ -401,11 +401,36 @@ section { padding: 100px 5%; }
   align-items: center;
 }
 
-.nosotros-img-side { position: relative; }
+.nosotros-img-side {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+}
+
+.nosotros-foto {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(201,168,76,0.15);
+}
+
+.nosotros-foto img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(0.85) sepia(0.2);
+  transition: filter 0.4s ease;
+}
+
+.nosotros-foto:hover img {
+  filter: brightness(0.95) sepia(0.1);
+}
 
 .nosotros-logo-display {
   width: 100%;
-  max-width: 280px;
+  max-width: 380px;
   aspect-ratio: 1;
   background: var(--dark2);
   border: 1px solid rgba(201,168,76,0.12);
@@ -424,12 +449,11 @@ section { padding: 100px 5%; }
 }
 
 .nosotros-logo-display img {
-  width: 55%;
+  width: 75%;
   object-fit: contain;
   filter: brightness(1.1) drop-shadow(0 0 30px rgba(201,168,76,0.2));
   position: relative;
   z-index: 1;
-  
 }
 
 .nosotros-corner {
@@ -477,6 +501,7 @@ section { padding: 100px 5%; }
   line-height: 1.9;
   color: rgba(245,240,232,0.7);
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .nosotros-text p strong {
@@ -1015,26 +1040,4 @@ footer {
   .proceso-steps    { grid-template-columns: 1fr; }
   .sectores-grid    { grid-template-columns: 1fr 1fr; }
   .nosotros-values  { grid-template-columns: 1fr; }
-}
-
-/* ── NOSOTROS FOTO ── */
-.nosotros-foto {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  border: 1px solid rgba(201,168,76,0.15);
-}
-
-.nosotros-foto img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  filter: brightness(0.85) sepia(0.2);
-  transition: filter 0.4s ease;
-}
-
-.nosotros-foto:hover img {
-  filter: brightness(0.95) sepia(0.1);
 }
